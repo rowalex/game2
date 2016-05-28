@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-block sid="5121151830783419">
+            <conditions>
+                <condition id="0" name="On clicked" sid="8596340285646657" type="Button" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9462672376912513" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="6220371853674159" type="System">
+                    <param id="0" name="Variable">Variable1</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4479741634721698">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7391379011555329" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="673395895714153" type="Text8">
+                    <param id="0" name="Text">SELA</param>
+                </action>
+                <action id="0" name="Set text" sid="4889484288265381" type="Text9">
+                    <param id="0" name="Text">UBEISTBA</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2880616866315625">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1116508007309999" type="System">
+                    <param id="0" name="Variable">UBEISTBA</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">PLATAG</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4766324964328891">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="3871972197483293" type="Button4" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="2521082223628939" type="System">
+                            <param id="0" name="Variable">SELA</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="9780220169248919" type="System">
+                            <param id="0" name="Variable">UBEISTBA</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2542197597984246">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3854656602452872" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4384576647129942" type="Text12">
+                    <param id="0" name="Text">PLATAG</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
